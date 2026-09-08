@@ -57,19 +57,16 @@
 
         <h1>Detail User</h1>
 
-        <!-- Nama user -->
         <div class="data">
             <span class="label">Nama</span>
             <span class="value">{{ $user->name }}</span>
         </div>
 
-        <!-- Email user -->
         <div class="data">
             <span class="label">Email</span>
             <span class="value">{{ $user->email }}</span>
         </div>
 
-        <!-- Tombol kembali -->
         <a href="{{ route('users.index') }}" class="btn-kembali">
             Kembali
         </a>

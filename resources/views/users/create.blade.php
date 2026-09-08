@@ -67,24 +67,19 @@
 
         <h1>Tambah User</h1>
 
-        <!-- Form tambah user -->
         <form action="{{ route('users.store') }}" method="POST">
 
             @csrf
 
-            <!-- Nama -->
             <label>Nama</label>
             <input type="text" name="name" required>
 
-            <!-- Email -->
             <label>Email</label>
             <input type="email" name="email" required>
 
-            <!-- Password -->
             <label>Password</label>
             <input type="password" name="password" required>
 
-            <!-- Tombol -->
             <button type="submit" class="btn-simpan">
                 Simpan
             </button>

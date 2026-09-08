@@ -67,21 +67,17 @@
 
         <h1>Edit User</h1>
 
-        <!-- Form edit user -->
         <form action="{{ route('users.update', $user->id) }}" method="POST">
 
             @csrf
             @method('PUT')
 
-            <!-- Nama -->
             <label>Nama</label>
             <input type="text" name="name" value="{{ $user->name }}" required>
 
-            <!-- Email -->
             <label>Email</label>
             <input type="email" name="email" value="{{ $user->email }}" required>
 
-            <!-- Tombol -->
             <button type="submit" class="btn-update">
                 Update
             </button>

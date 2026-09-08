@@ -95,12 +95,10 @@
 
         <h1>Daftar User</h1>
 
-        <!-- Tombol tambah user -->
         <a href="{{ route('users.create') }}" class="btn-tambah">
             + Tambah User
         </a>
 
-        <!-- Tabel daftar user -->
         <table>
             <thead>
                 <tr>
@@ -114,23 +112,19 @@
                 @foreach ($users as $user)
                     <tr>
                         <td>{{ $user->name }}</td>
-
                         <td>{{ $user->email }}</td>
 
                         <td>
-                            <!-- Detail -->
                             <a href="{{ route('users.show', $user->id) }}"
                                class="btn detail">
                                 Detail
                             </a>
 
-                            <!-- Edit -->
                             <a href="{{ route('users.edit', $user->id) }}"
                                class="btn edit">
                                 Edit
                             </a>
 
-                            <!-- Hapus -->
                             <form action="{{ route('users.destroy', $user->id) }}"
                                   method="POST">
 
