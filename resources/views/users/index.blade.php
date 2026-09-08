@@ -2,41 +2,138 @@
 <html>
 <head>
     <title>Daftar User</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f8ff;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .btn-tambah {
+            display: inline-block;
+            background-color: #6c8cff;
+            color: white;
+            padding: 10px 16px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eef2ff;
+        }
+
+        .btn {
+            padding: 7px 12px;
+            text-decoration: none;
+            border-radius: 6px;
+            color: white;
+            font-size: 14px;
+        }
+
+        .detail {
+            background-color: #5aa9e6;
+        }
+
+        .edit {
+            background-color: #f4a261;
+        }
+
+        .hapus {
+            background-color: #e76f51;
+            border: none;
+            padding: 7px 12px;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+        }
+
+        form {
+            display: inline;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- Judul halaman -->
-    <h1>Daftar User</h1>
+    <div class="container">
 
-    <!-- Tombol untuk menuju halaman tambah user -->
-    <a href="{{ route('users.create') }}">Tambah User</a>
+        <h1>Daftar User</h1>
 
-    <!-- Menampilkan semua data user -->
-    <ul>
-        @foreach ($users as $user)
-            <li>
-                <!-- Menampilkan nama dan email user -->
-                {{ $user->name }} - {{ $user->email }}
+        <a href="{{ route('users.create') }}" class="btn-tambah">
+            + Tambah User
+        </a>
 
-                <!-- Tombol untuk melihat detail user -->
-                <a href="{{ route('users.show', $user->id) }}">Detail</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Email</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
 
-                <!-- Tombol untuk mengedit user -->
-                <a href="{{ route('users.edit', $user->id) }}">Edit</a>
+            <tbody>
+                @foreach ($users as $user)
+                    <tr>
+                        <td>{{ $user->name }}</td>
+                        <td>{{ $user->email }}</td>
 
-                <!-- Form untuk menghapus user -->
-                <form action="{{ route('users.destroy', $user->id) }}"
-                      method="POST"
-                      style="display:inline;">
+                        <td>
+                            <a href="{{ route('users.show', $user->id) }}"
+                               class="btn detail">
+                                Detail
+                            </a>
 
-                    @csrf
-                    @method('DELETE')
+                            <a href="{{ route('users.edit', $user->id) }}"
+                               class="btn edit">
+                                Edit
+                            </a>
 
-                    <button type="submit">Hapus</button>
-                </form>
-            </li>
-        @endforeach
-    </ul>
+                            <form action="{{ route('users.destroy', $user->id) }}"
+                                  method="POST">
+
+                                @csrf
+                                @method('DELETE')
+
+                                <button type="submit" class="hapus">
+                                    Hapus
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
+
+    </div>
 
 </body>
 </html>
