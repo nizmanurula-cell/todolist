@@ -35,6 +35,10 @@
             margin-bottom: 20px;
         }
 
+        .btn-tambah:hover {
+            background-color: #5575e8;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -73,6 +77,10 @@
             border-radius: 6px;
             color: white;
             cursor: pointer;
+        }
+
+        .hapus:hover {
+            background-color: #d85d40;
         }
 
         form {
