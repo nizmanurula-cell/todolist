@@ -68,7 +68,7 @@
         </div>
 
         <a href="{{ route('users.index') }}" class="btn-kembali">
-            KEMBALI
+            Kembali
         </a>
 
     </div>
