@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>tambah user ✨</title>
+    <title>Tambah User</title>
 
     <style>
         body {
@@ -65,7 +65,7 @@
 
     <div class="container">
 
-        <h1>tambah user ✨</h1>
+        <h1>Tambah User</h1>
 
         <form action="{{ route('users.store') }}" method="POST">
 
@@ -81,11 +81,11 @@
             <input type="password" name="password" required>
 
             <button type="submit" class="btn-simpan">
-                simpan ✨
+                Simpan
             </button>
 
             <a href="{{ route('users.index') }}" class="btn-kembali">
-                kembali ✨
+                Kembali
             </a>
 
         </form>
