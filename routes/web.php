@@ -10,3 +10,6 @@ Route::get('/', function () {
 
 // Route untuk semua proses CRUD User
 Route::resource('users', UserController::class);
+
+// Route untuk semua proses CRUD User
+Route::resource('users', UserController::class);
