@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>edit user 👤 </title>
+    <title>Edit User</title>
 
     <style>
         body {
@@ -65,7 +65,7 @@
 
     <div class="container">
 
-        <h1>edit user 👤</h1>
+        <h1>Edit User</h1>
 
         <form action="{{ route('users.update', $user->id) }}" method="POST">
 
@@ -79,11 +79,11 @@
             <input type="email" name="email" value="{{ $user->email }}" required>
 
             <button type="submit" class="btn-update">
-                update 👤
+                Update
             </button>
 
             <a href="{{ route('users.index') }}" class="btn-kembali">
-                kembali 👤
+                Kembali
             </a>
 
         </form>
