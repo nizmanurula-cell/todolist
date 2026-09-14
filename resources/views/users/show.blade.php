@@ -58,7 +58,7 @@
         <h1>Detail User</h1>
 
         <div class="data">
-            <span class="label">Nama</span>
+            <span class="label">nama</span>
             <span class="value">{{ $user->name }}</span>
         </div>
 
