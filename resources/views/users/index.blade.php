@@ -96,7 +96,7 @@
         <h1>Daftar User</h1>
 
         <a href="{{ route('users.create') }}" class="btn-tambah">
-             Tambah User
+            + Tambah User
         </a>
 
         <table>
