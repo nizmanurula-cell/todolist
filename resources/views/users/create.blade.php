@@ -65,7 +65,7 @@
 
     <div class="container">
 
-        <h1>tambah user ✨</h1>
+        <h1> TAMBAH user ✨</h1>
 
         <form action="{{ route('users.store') }}" method="POST">
 
