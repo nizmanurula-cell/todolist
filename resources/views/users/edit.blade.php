@@ -65,25 +65,25 @@
 
     <div class="container">
 
-        <h1>edit user 👤</h1>
+        <h1>edit user </h1>
 
         <form action="{{ route('users.update', $user->id) }}" method="POST">
 
             @csrf
             @method('PUT')
 
-            <label>Nama</label>
+            <label>nama</label>
             <input type="text" name="name" value="{{ $user->name }}" required>
 
-            <label>Email</label>
+            <label>email</label>
             <input type="email" name="email" value="{{ $user->email }}" required>
 
             <button type="submit" class="btn-update">
-                update 👤
+                update
             </button>
 
             <a href="{{ route('users.index') }}" class="btn-kembali">
-                kembali 👤
+                back
             </a>
 
         </form>
