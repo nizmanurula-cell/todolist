@@ -71,13 +71,13 @@
 
             @csrf
 
-            <label>Nama</label>
+            <label>nama</label>
             <input type="text" name="name" required>
 
-            <label>Email</label>
+            <label>email</label>
             <input type="email" name="email" required>
 
-            <label>Password</label>
+            <label>password</label>
             <input type="password" name="password" required>
 
             <button type="submit" class="btn-simpan">
