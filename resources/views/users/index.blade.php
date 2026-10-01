@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>daftar hela  User</title>
+    <title>Daftar User</title>
 
     <style>
         body {
