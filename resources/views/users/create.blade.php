@@ -65,27 +65,27 @@
 
     <div class="container">
 
-        <h1>tambah user ✨</h1>
+        <h1>tambah user </h1>
 
         <form action="{{ route('users.store') }}" method="POST">
 
             @csrf
 
-            <label>Nama</label>
+            <label>nama</label>
             <input type="text" name="name" required>
 
-            <label>Email</label>
+            <label>email</label>
             <input type="email" name="email" required>
 
-            <label>Password</label>
+            <label>password</label>
             <input type="password" name="password" required>
 
             <button type="submit" class="btn-simpan">
-                simpan ✨
+                simpan 
             </button>
 
             <a href="{{ route('users.index') }}" class="btn-kembali">
-                kembali ✨
+                kembali 
             </a>
 
         </form>
