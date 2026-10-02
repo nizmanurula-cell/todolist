@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Daftar User</title>
+    <title>daftar user</title>
 
     <style>
         body {
@@ -93,18 +93,18 @@
 
     <div class="container">
 
-        <h1>Daftar User</h1>
+        <h1>daftar user</h1>
 
         <a href="{{ route('users.create') }}" class="btn-tambah">
-            + Tambah User
+            + tambah user
         </a>
 
         <table>
             <thead>
                 <tr>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>Aksi</th>
+                    <th>nama</th>
+                    <th>email</th>
+                    <th>aksi</th>
                 </tr>
             </thead>
 
@@ -117,12 +117,12 @@
                         <td>
                             <a href="{{ route('users.show', $user->id) }}"
                                class="btn detail">
-                                Detail
+                                detail
                             </a>
 
                             <a href="{{ route('users.edit', $user->id) }}"
                                class="btn edit">
-                                Edit
+                                edit
                             </a>
 
                             <form action="{{ route('users.destroy', $user->id) }}"
@@ -132,7 +132,7 @@
                                 @method('DELETE')
 
                                 <button type="submit" class="hapus">
-                                    Hapus
+                                    hapus
                                 </button>
                             </form>
                         </td>

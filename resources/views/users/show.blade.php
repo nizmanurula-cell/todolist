@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Detail User</title>
+    <title>detail user</title>
 
     <style>
         body {
@@ -55,20 +55,20 @@
 
     <div class="container">
 
-        <h1>Detail User</h1>
+        <h1>detail user</h1>
 
         <div class="data">
-            <span class="label">Nama</span>
+            <span class="label">nama</span>
             <span class="value">{{ $user->name }}</span>
         </div>
 
         <div class="data">
-            <span class="label">Email</span>
+            <span class="label">email</span>
             <span class="value">{{ $user->email }}</span>
         </div>
 
         <a href="{{ route('users.index') }}" class="btn-kembali">
-            KEMBALI
+            kembali
         </a>
 
     </div>
