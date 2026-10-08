@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EDIT user </title>
+    <title>edit USER </title>
 
     <style>
         body {
