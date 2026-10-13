@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EDIT USER </title>
->>>>>>> fitur-crud
-
+    <title>EDIT DATA USER </title>
     <style>
         body {
             font-family: Arial, sans-serif;
