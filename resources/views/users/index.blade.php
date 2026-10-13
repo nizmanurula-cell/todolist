@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>daftar user</title>
+    <title>DAFTAR USER</title>
 
     <style>
         body {
@@ -93,7 +93,7 @@
 
     <div class="container">
 
-        <h1>daftar user</h1>
+        <h1>DAFTAR USER</h1>
 
         <a href="{{ route('users.create') }}" class="btn-tambah">
             + tambah user
