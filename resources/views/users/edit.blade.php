@@ -79,11 +79,11 @@
             <input type="email" name="email" value="{{ $user->email }}" required>
 
             <button type="submit" class="btn-update">
-                update 
+                UPDATE
             </button>
 
             <a href="{{ route('users.index') }}" class="btn-kembali">
-                kembali 
+                KEMBALI 
             </a>
 
         </form>
