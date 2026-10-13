@@ -65,7 +65,7 @@
 
     <div class="container">
 
-        <h1>edit data user </h1>
+        <h1>edit user </h1>
 
         <form action="{{ route('users.update', $user->id) }}" method="POST">
 
