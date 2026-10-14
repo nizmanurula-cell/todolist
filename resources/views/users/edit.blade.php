@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>EDIT DATA USER </title>
+    <title>EDIT USER </title>
     <style>
         body {
             font-family: Arial, sans-serif;
